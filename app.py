@@ -22,3 +22,9 @@ while datetime.now().second != wait_until:
     pass
 print(f'We are at {wait_until} seconds!')
 
+for num in range(2, 100):
+    for factor in range(2, int(num**0.5) + 1):
+        if num % factor == 0:
+            break
+    else:
+        print(f'{num} is a prime!')
